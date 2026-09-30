@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Оплата — PYCODE</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+<a class="logo" href="index.html"><span>PY</span>CODE</a>
+<nav><a href="index.html">Главная</a><a href="courses.html">Обучение</a><a class="active" href="payment.html">Купить курс</a></nav>
+<a class="login-btn" href="courses.html#account">Войти</a>
+</header>
+
+<main class="page">
+<section class="page-title"><div class="eyebrow">SECURE CHECKOUT</div><h1>Оплата курса</h1><p>Демонстрационная страница оплаты. Реальный платёжный сервис пока не подключён.</p></section>
+
+<section class="checkout">
+<div class="invoice">
+<div class="invoice-top"><span>СЧЁТ № PY-2026-001</span><span>30.09.2026</span></div>
+<h2>Python PRO</h2><p>Полный курс программирования на Python</p>
+<div class="invoice-row"><span>Учебные материалы PDF</span><b>99 000 сум</b></div>
+<div class="invoice-row"><span>Доступ к скачиванию</span><b>Включён</b></div>
+<div class="total"><span>ИТОГО</span><strong>99 000 сум</strong></div>
+<div class="secure">🔒 Тестовый платёж — деньги не списываются</div>
+</div>
+<div class="pay-form">
+<h3>Данные плательщика</h3>
+<label>Имя<input id="payerName" placeholder="Ваше имя"></label>
+<label>Email<input id="payerEmail" type="email" placeholder="example@mail.com"></label>
+<label>Способ оплаты
+<select><option>Банковская карта</option><option>Payme</option><option>Click</option></select></label>
+<div class="fake-card"><span>PYCODE</span><b>****  ****  ****  4242</b><small>DEMO CARD</small></div>
+<button class="btn gold full" onclick="payDemo()">Оплатить 99 000 сум</button>
+<div id="payment-message" class="message"></div>
+</div>
+</section>
+
+<section class="download-section" id="downloadArea">
+<div class="success-icon">✓</div>
+<div><div class="eyebrow">ОПЛАТА ПОДТВЕРЖДЕНА</div><h2>Материалы доступны</h2><p>Теперь ты можешь скачать PDF-уроки курса.</p></div>
+<a class="btn gold" href="pdf/python-pro-course.pdf" download>Скачать Python PRO PDF</a>
+</section>
+
+<section class="admin-note">
+<h3>Для владельца сайта</h3>
+<p>Замени файл <code>pdf/python-pro-course.pdf</code> на свой PDF. Для настоящей оплаты подключи Payme, Click или другой платёжный шлюз на backend — текущая кнопка является демонстрацией.</p>
+</section>
+</main>
+<footer><div class="logo"><span>PY</span>CODE</div><p>© 2026 PYCODE.</p></footer>
+<script src="js/app.js"></script>
+</body>
+</html>
